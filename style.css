@@ -7,8 +7,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: lightgrey;
     color: black;
+    font-size: 16px;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
     border-left: px solid black;
     border-right: px solid black;
     flex-shrink: 0;
-    max-height:
+    z-index: -100;
 }
 
 .contain {
@@ -73,12 +74,12 @@ img {
     max-width: 100%;
     max-height: 100%;
     display: block;
+    margin: auto;
 }
 
 .picture {
-    max-height: 20em;
-    align-self: center;
-    
+    max-height: 25em;
+    justify-content: center;
 }
 
 .picture img {
@@ -89,7 +90,6 @@ img {
     margin-top: 1em;
 }
 .text, .picture{
-    height: 50%;
     padding: 0em 0 0em;
 }
 .text {
@@ -100,8 +100,8 @@ img {
     border-style: solid;
     border-radius: 25px;
     overflow: hidden;
-    background-color: dimgrey;
-    color: antiquewhite ;
+    background-color: #313131;
+    color: whitesmoke;
 }
 
 .text.large {
@@ -116,7 +116,7 @@ header img {
 }
 
 .trim {
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .textlarge {
@@ -139,10 +139,11 @@ header img {
 .header h1 {
     position: relative;
     top: 25%;
-    left:15%;
+    left: 15%;
+    width: 50%;
+    min-width: 400px;
     padding: 0;
     margin: 0;
-    margin-top: ;
     font-size: 43px;
 }
 
@@ -158,6 +159,14 @@ header img {
 .container {
     margin-top: 1em;
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.center {
+    height: auto;
+    padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
